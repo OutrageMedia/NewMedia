@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main_Page.master.cs" Inherits="NewWeb_Project_V_1.Main_Page" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+     <link href="css/Sidebar.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <nav class="navbar navbar-dark bg-dark fixed-top ">
+            <button onclick="openNav()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="col-3"></div>
+            <div class="col-4 text-center">
+                <a class=" text-light font-italic" href="Home.aspx">
+                    <h4>Outrage Media Group</h4>
+                </a>
+            </div>
+            <%--   <div class="col-4 d-flex justify-content-end align-items-center" style="border:dashed">--%>
+            <div class="col-4 d-flex">
+                <div class="col-8"></div>
+                <div class="col-3 justify-content-end text-right ">
+                    <a class="btn btn-sm btn-outline-light" href="Sign_In.aspx">Sign In</a>
+                </div>
+                <div class="col-2 justify-content-start text-left">
+                    <a class="btn btn-sm btn-outline-light" href="Login_in.aspx">Login</a>
+                </div>
+            </div>
+
+        </nav>
+        <br />
+        <br />
+        <!-- This is the Different Tabs -->
+        <div class="container rounded position-relative">
+
+            <div class="text-center py-3">
+                <a href="Politics.aspx" class="btn btn-outline-dark" role="button" aria-pressed="true">Politics</a>
+                <a href="Sports.aspx" class="btn btn-outline-dark" role="button" aria-pressed="true">Sports</a>
+                <a href="Economy.aspx" class="btn btn-outline-dark" role="button" aria-pressed="true">Economy</a>
+                <a href="International.aspx" class="btn btn-outline-dark" role="button" aria-pressed="true">International</a>
+
+            </div>
+        </div>
+        <br />
+<!-- This is the collapse sidebar -->
+        <div class="container-fluid ">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <div class="container body-content">
+         
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+             
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - Outrage Media Group </p>
+            </footer>
+        </div>
+
+
+    </form>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/Sidebar.js"></script>
+</body>
+</html>
