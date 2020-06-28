@@ -39,14 +39,29 @@
         <br />
         <br />
         <!-- This is the Different Tabs -->
-        <div class="container rounded position-relative">
-
-            <div class="text-center py-3">
-                <a href="Politics.aspx" class="btn btn-outline-dark" role="button" aria-pressed="true">Politics</a>
-                <a href="Sports.aspx" class="btn btn-outline-dark" role="button" aria-pressed="true">Sports</a>
-                <a href="Economy.aspx" class="btn btn-outline-dark" role="button" aria-pressed="true">Economy</a>
-                <a href="International.aspx" class="btn btn-outline-dark" role="button" aria-pressed="true">International</a>
-
+        <div class="container-fluid">
+            <div class="row justify-content-end">
+                <div class="col-8 text-center py-1">
+                    <a href="Politics.aspx" class="btn btn-outline-dark" role="button" aria-pressed="true">Politics</a>
+                    <a href="Sports.aspx" class="btn btn-outline-dark" role="button" aria-pressed="true">Sports</a>
+                    <a href="Economy.aspx" class="btn btn-outline-dark" role="button" aria-pressed="true">Economy</a>
+                    <a href="International.aspx" class="btn btn-outline-dark" role="button" aria-pressed="true">International</a>
+                </div>
+                <%--This is concept One Share Tab--%>
+                <%--  <div class="col-2 text-righ shadow-sm bg-dark py-2 mr-2">     
+                    <a class="btn-floating btn-lg btn-tw text-right py-3" role="button"><i class="fab fa-twitter" style="color:Highlight"></i></a>
+                    <a class="btn-floating btn-lg btn-tw text-right py-3" role="button"><i class="fab fa-facebook" style="color:Highlight"></i></a>
+                    <a class="btn-floating btn-lg btn-tw text-right py-3" role="button"><i class="fab fa-youtube" style="color: red"></i></a>
+                    <a class="btn-floating btn-lg btn-tw text-right py-3" role="button"><i class="fab fa-whatsapp" style="color: springgreen"></i></a>
+                </div>--%>
+                <%-- This is concept Two Share Tab--%>
+                <div class="col-2 justify-content-around border py-2 mr-2">
+                    <a class="btn-floating btn-lg btn-tw text-right py-3" role="button"><i class="fab fa-twitter" style="color: Highlight"></i></a>
+                    <a class="btn-floating btn-lg btn-tw text-right py-3" role="button"><i class="fab fa-facebook" style="color: Highlight"></i></a>
+                    <a class="btn-floating btn-lg btn-tw text-right py-3" role="button"><i class="fab fa-youtube" style="color: red"></i></a>
+                    <a class="btn-floating btn-lg btn-tw text-right py-3" role="button"><i class="fab fa-whatsapp" style="color: forestgreen"></i></a>
+                   
+                </div>
             </div>
         </div>
         <br />
